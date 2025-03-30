@@ -182,7 +182,7 @@ export default function Rodin() {
 
   const ExternalLinks = () => (
     <div className="flex items-center space-x-6">
-      <a
+      {/* <a
         href="https://bimadev.xyz"
         target="_blank"
         rel="noopener noreferrer"
@@ -190,7 +190,7 @@ export default function Rodin() {
       >
         <span className="mr-1">My Website</span>
         <ExternalLink className="h-4 w-4" />
-      </a>
+      </a> */}
     </div>
   )
 
