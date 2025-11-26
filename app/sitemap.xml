@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
+  <url>
+    <loc>https://3d.bimadev.online/</loc>
+    <lastmod>2025-11-26T06:44:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://3d.bimadev.online/placeholder-logo.png</image:loc>
+      <image:title>3D Model Generator</image:title>
+      <image:caption>Platform AI untuk membuat model 3D dari gambar 2D</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- API Status endpoint -->
+  <url>
+    <loc>https://3d.bimadev.online/api/status</loc>
+    <lastmod>2025-11-26T06:44:00Z</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- API Rodin endpoint -->
+  <url>
+    <loc>https://3d.bimadev.online/api/rodin</loc>
+    <lastmod>2025-11-26T06:44:00Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>

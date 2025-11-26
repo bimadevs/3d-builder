@@ -1,0 +1,43 @@
+# Robots.txt untuk 3D Model Generator
+# https://3d.bimadev.online/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://3d.bimadev.online/sitemap.xml
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Block problematic bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# Block admin and API routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important pages
+Allow: /api/status
+Allow: /favicon.ico
+Allow: /manifest.json
