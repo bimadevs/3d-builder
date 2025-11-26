@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server"
 
-const API_KEY = "vibecoding" // Public API key
+const API_KEY = process.env.HYPER3D_API_KEY
+const BASE_URL = process.env.HYPER3D_BASE_URL || "https://hyperhuman.deemos.com/api/v2"
+
+if (!API_KEY) {
+  throw new Error("HYPER3D_API_KEY environment variable is required")
+}
 
 export async function POST(request: Request) {
   try {
@@ -11,7 +16,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing task_uuid" }, { status: 400 })
     }
 
-    const response = await fetch("https://hyperhuman.deemos.com/api/v2/download", {
+    const response = await fetch(`${BASE_URL}/download`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${API_KEY}`,

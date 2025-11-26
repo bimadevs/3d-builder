@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server"
 
-const API_KEY = "vibecoding" // Public API key
+const API_KEY = process.env.HYPER3D_API_KEY
+const BASE_URL = process.env.HYPER3D_BASE_URL || "https://hyperhuman.deemos.com/api/v2"
+
+if (!API_KEY) {
+  throw new Error("HYPER3D_API_KEY environment variable is required")
+}
 
 export async function POST(request: Request) {
   try {
@@ -8,7 +13,7 @@ export async function POST(request: Request) {
     const formData = await request.formData()
 
     // Forward the request to the Hyper3D API
-    const response = await fetch("https://hyperhuman.deemos.com/api/v2/rodin", {
+    const response = await fetch(`${BASE_URL}/rodin`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${API_KEY}`,
