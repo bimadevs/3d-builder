@@ -1,0 +1,21 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /_next/
+
+# Host
+Host: https://3d.bimadev.online
+
+# Sitemaps
+Sitemap: https://3d.bimadev.online/sitemap.xml
